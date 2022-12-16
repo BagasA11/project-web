@@ -1,0 +1,105 @@
+*{
+margin: 0px;
+padding: 0px;
+}
+
+nav{
+    background-color: lightblue;
+    display:flex;
+    color:white;
+    justify-content: space-between; 
+    padding: 20px 0;
+    top:0;
+}
+
+
+
+nav ul{
+    /*display: flex;*/
+    list-style: none;    
+}
+
+nav .assign{
+    display:flex;
+    justify-content: space-between;
+    padding: 0;
+    left: -5px;
+    font-size: 12pt;
+}
+
+nav ul li #up{
+    background-color: orange;
+    color:white;
+    border-radius: 5px;
+    margin:10px;
+    border: 2px solid orange;
+    }
+
+nav ul li #up:hover{
+    background-color: white;
+}
+
+nav ul li #in{
+    border:2px solid orange;
+    color:white;
+    border-radius: 5px;
+    padding:2px;
+    }
+
+nav ul li #in:hover{
+    background-color: white;
+}
+
+/*  set drpdwn Parent Position  */
+
+nav .dropdown{
+    position: relative;
+    display: inline-block;
+    bottom:0;
+  
+}
+
+/*  styling dropdown button */
+
+nav .dropdown .dropbtn{
+    padding:16px 16px;
+    border: none;
+    cursor:pointer;
+    display: flex;
+    background-color: lightblue;
+    color: orange;
+    font-size: 16pt;
+
+}
+
+
+/*  set drop menu {before clicked}*/
+
+nav .dropdown .drop_menu{
+    position:absolute;
+    display: none;
+    background-color: orange;
+    z-index: 1;
+    min-width: 50%;
+    opacity: -3px;  
+    right: -50px; 
+}
+
+/*styling link menu*/
+nav .dropdown .drop_menu #link_menu{
+    color: white;
+    font-size: 14pt;
+    padding: 12px 16px;
+    display: block;
+}
+
+/*  set drop menu {after clicked}*/
+
+.dropdown:hover .drop_menu{
+    display: block;
+    transform: translate(-50px, 0) ;
+}
+
+.dropdown .drop_menu #link_menu:hover{
+    background-color: lightblue;
+}
