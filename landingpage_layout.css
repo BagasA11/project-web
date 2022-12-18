@@ -67,9 +67,9 @@ h2{
 section{
     grid-row: 3;
     grid-column: 1;
-    border: 1px solid;
+
     text-align: center;
-    box-sizing: border-box;
+    
 }
 
 footer{

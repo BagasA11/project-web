@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LandingPage-14715</title>
-<link rel="stylesheet" href="nav_menu.css" type="text/css" />
+
+<link rel="stylesheet" href="landingpage_style.css" type="text/css" />
 <link rel="stylesheet" href="landingpage_layout.css" type="text/css" />
 </head>
 <body>
@@ -17,7 +18,7 @@
   </ul>
   <div class="dropdown">
     <button class="dropbtn">
-      <p><=</p>
+      <=
     </button>
     <div class="drop_menu">
       <ul id="menu">
@@ -49,7 +50,27 @@
 <!--gallerr-->
 <!--making Gallery Pagination-->
 <section>
-<h3 id="Gallery">Galeri dan Portofolio</h3>
+<h3 class="slider_head">Galeri dan Portofolio</h3>
+<div class="gallery_container">
+  <div class="content">
+    <img src="portofolio1.jpg">
+  </div>
+  <div class="content">
+    <img src="portofolio2.jpg">
+  </div>
+  <div class="content">
+    <img src="portofolio3.png">
+  </div>
+  <span class="pre" onclick="plusSlide(-1)"><p><</p></span>
+  <span class="next" onclick="plusSlide(1)"><p>></p></span>
+  
+</div>
+<!-- <div class="dot_container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+-->
 </section>
 <!--footer-->
 <footer>
@@ -59,11 +80,8 @@
 
   </div>
 </footer>
-<script>
-
-
-
-
+<script src="slider.js">
 </script>
+
 </body>
 </html>

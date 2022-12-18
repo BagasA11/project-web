@@ -1,0 +1,195 @@
+/* Navigasi */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+    
+nav{
+    background-color: lightblue;
+    display:flex;
+    color:white;
+    justify-content: space-between; 
+    padding: 20px 0;
+    /* position: fixed;*/
+    z-index: 4;
+    top:0;
+       
+}
+    
+    
+    
+nav ul{
+    
+    list-style: none;
+    position: relative;    
+    }
+    
+nav .assign{
+    display:flex;
+    justify-content: space-between;
+    padding: 0;
+    left: -5px;
+    font-size: 12pt;
+}
+    
+nav ul li #up{
+    background-color: orange;
+    color:white;
+    border-radius: 5px;
+    margin:10px;
+    border: 2px solid orange;
+}
+    
+nav ul li #up:hover{
+    background-color: white;
+}
+    
+nav ul li #in{
+    border:2px solid orange;
+    color:white;
+    border-radius: 5px;
+    padding:4px;
+}
+    
+nav ul li #in:hover{
+    background-color: white;
+}
+    
+    /*  set drpdwn Parent Position  */
+    
+nav .dropdown{
+    position: relative;
+    display: inline-block;
+    bottom:0;
+      
+}
+    
+    /*  styling dropdown button */
+    
+nav .dropdown .dropbtn{
+        padding:16px 16px;
+        border: none;
+        cursor:pointer;
+        display: flex;
+        background-color: lightblue;
+        color: orange;
+        font-size: 20pt;
+    
+}
+        
+    
+    /*  set drop menu {before clicked}*/
+    
+nav .dropdown .drop_menu{
+    position:absolute;
+    display: none;
+    background-color: orange;
+    z-index: 1;
+    min-width: 50%;
+    opacity: -3px;  
+    right: -50px; 
+}
+    
+    /*styling link menu*/
+nav .dropdown .drop_menu #link_menu{
+    color: white;
+    font-size: 14pt;
+    padding: 12px 16px;
+    display: block;
+}
+    
+    /*  set drop menu {after clicked}*/
+    
+.dropdown:hover .drop_menu{
+    display: block;
+        transform: translate(-50px, 0) ;
+    }
+    
+.dropdown .drop_menu #link_menu:hover{
+    background-color: lightblue;
+}
+
+
+/* Galeri   */
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+section{
+    display: flex;
+    justify-content: center;
+    padding: auto;
+}
+
+section h3{
+    background-color: orange;
+    color: white;
+    border-radius: 45%;
+    border: 4px orange solid;
+    width: 40%;
+    
+    font-size: 20pt;
+    max-height: 40pt;
+    margin-left: 40%;
+}
+
+/* Setting Container  */
+
+section .gallery_container{
+    width: 100%;
+    /*height: 100px;*/
+    margin-top: -90px;
+    margin-left: -1380px;
+    position: relative;
+    bottom: -200px;
+}
+/* Pre and Next button*/
+.pre, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -80px;
+    color: rgb(54, 54, 54);
+    font-weight: bold;
+    font-size: 30pt;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/*Positioning Prev and Next BUtton*/
+.pre{
+    left: 50px;
+  border-radius: 3px 0 0 3px;
+
+}
+
+.next{
+     right: 30px;
+  border-radius: 3px 0 0 3px;
+
+}
+
+/* pre and next button while on hover*/
+
+.pre:hover, .next:hover{
+    background-color: rgb(48, 48, 48);
+    color: rgb(219, 236, 236);
+}
+
+/* set content
+*/
+
+.gallery_container .content img{
+    width: 400px;
+    height: 200px;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    position: absolute;
+    vertical-align: middle;
+    right: 500px;
+}
