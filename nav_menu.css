@@ -9,14 +9,18 @@ nav{
     color:white;
     justify-content: space-between; 
     padding: 20px 0;
+   /* position: fixed;*/
+    z-index: 4;
     top:0;
+   
 }
 
 
 
 nav ul{
     /*display: flex;*/
-    list-style: none;    
+    list-style: none;
+    position: relative;    
 }
 
 nav .assign{
@@ -43,7 +47,7 @@ nav ul li #in{
     border:2px solid orange;
     color:white;
     border-radius: 5px;
-    padding:2px;
+    padding:4px;
     }
 
 nav ul li #in:hover{
@@ -68,7 +72,7 @@ nav .dropdown .dropbtn{
     display: flex;
     background-color: lightblue;
     color: orange;
-    font-size: 16pt;
+    font-size: 20pt;
 
 }
 
